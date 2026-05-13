@@ -19,6 +19,7 @@ dist/
 .pytest_cache/
 venv/
 env/
+references/
 
 # Local Development & OS Files
 .DS_Store
