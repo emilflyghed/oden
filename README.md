@@ -39,12 +39,6 @@ For an agent working inside this repository:
 Read AGENTS.md and agent-docs/README.md before starting.
 ```
 
-For a numbered implementation plan:
-
-```text
-Start step 3.
-```
-
 The agent should then read the plan index, the step protocol, the matching step file, relevant Oden docs, make only the scoped changes, run the listed verification, and report the actual verification level.
 
 For provider setup, start with:
