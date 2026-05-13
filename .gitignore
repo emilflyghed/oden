@@ -1,0 +1,30 @@
+# ===== ⚠️ SECURITY AND SECRETS (CRITICAL) =====
+# Environment variables and key store files - NEVER commit these with real secrets.
+.env
+*.env
+secrets/
+config/*.key
+credentials/**
+
+# API Keys & Tokens
+*.pem
+*.p12
+*.json # If JSON files contain keys or credentials
+*.yaml # If YAML files contain credentials
+
+# Build and Output Artifacts (These are generated, not source code)
+build/
+dist/
+*/__pycache__/
+.pytest_cache/
+venv/
+env/
+
+# Local Development & OS Files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Tooling Specific Secrets
+# If the project uses specific local cache or secrets directories, list them here.
+# Example: agent-docs/temp_secrets/

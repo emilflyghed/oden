@@ -1,0 +1,23 @@
+---
+description: Maintain persistent project notes in ./agent-docs/ so future sessions can continue with context
+alwaysApply: true
+---
+
+# Agent-Docs Session Memory
+
+The agent must use the `./agent-docs/` folder as persistent project memory.
+
+Important project state, implementation decisions, debugging discoveries, setup notes, and unresolved issues must be documented there so future sessions can continue without rediscovering the same context.
+
+## Core Rule
+
+When the agent learns something useful about the project that should survive beyond the current chat session, it must write or update a note inside `./agent-docs/`.
+
+The agent must not rely only on chat history for important project context.
+
+## Required Folder
+
+The project must contain:
+
+```txt
+./agent-docs/

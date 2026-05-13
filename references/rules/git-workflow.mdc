@@ -1,0 +1,14 @@
+---
+description: Git workflow standards
+alwaysApply: true
+---
+# Git Workflow
+
+- Write commit messages that explain *why*, not *what* (the diff shows what changed)
+- Commit working code. If something is half-done, use a WIP prefix: `WIP: refactor auth module`
+- Don't commit secrets, API keys, `.env` files, or credentials. Use `.gitignore`.
+- Don't commit generated files (`.pyc`, `_pycache_/`, `.venv/`, `node_modules/`)
+- Pull before push. Resolve conflicts locally.
+- One logical change per commit — don't mix a bugfix with a feature addition
+
+```

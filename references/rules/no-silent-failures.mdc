@@ -1,0 +1,28 @@
+---
+description: Prevent swallowed errors, hidden failures, and debugging-hostile error handling
+alwaysApply: true
+---
+
+# No Silent Failures
+
+The agent must never hide failures.
+
+Errors, failed commands, failed requests, failed tests, failed builds, failed database operations, and unexpected states must be surfaced clearly and handled explicitly.
+
+Silent failures make debugging harder, hide broken behavior, and create false confidence.
+
+## Core Rule
+
+Never suppress an error without reporting it, handling it deliberately, or re-raising it.
+
+The agent must not write code that fails invisibly.
+
+## Forbidden Patterns
+
+The agent must never add patterns such as:
+
+```python id="x3bd0v"
+try:
+    risky_operation()
+except:
+    pass

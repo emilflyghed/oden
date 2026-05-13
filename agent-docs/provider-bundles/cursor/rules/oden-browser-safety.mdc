@@ -1,0 +1,18 @@
+---
+description: Oden browser research/testing safety gates for Cursor agents.
+globs:
+alwaysApply: true
+---
+
+# Oden Browser Safety
+
+Browser use is allowed for public research, dynamic-page inspection, screenshots, and safe workflow testing.
+
+Follow `agent-docs/rules/browser-safety.md`.
+
+Ask for explicit user permission before publishing, submitting, signing up, entering credentials, making payments, sending messages, changing settings, deleting data, accepting terms, uploading files, or triggering any irreversible or externally visible browser action.
+
+At auth walls, stop and ask. Do not type credentials.
+
+Record browser evidence when findings affect future work.
+
